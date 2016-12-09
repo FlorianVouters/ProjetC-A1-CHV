@@ -1,0 +1,6 @@
+#ifndef GETSCALE_H_INCLUDED
+#define GETSCALE_H_INCLUDED
+
+
+
+#endif // GETSCALE_H_INCLUDED

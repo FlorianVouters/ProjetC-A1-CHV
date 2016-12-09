@@ -1,0 +1,6 @@
+#ifndef LANCEUR_H_INCLUDED
+#define LANCEUR_H_INCLUDED
+
+
+
+#endif // LANCEUR_H_INCLUDED
