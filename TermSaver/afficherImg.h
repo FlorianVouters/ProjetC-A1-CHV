@@ -3,7 +3,7 @@
 
 
 
-void aficherImg(int **tableau, int posX, int posY, int tailleX, int tailleY);
+void aficherImg(int **tableau, int posX, int posY, int nbLignes);
 
 
 #endif // AFFICHERIMG_H_INCLUDED
