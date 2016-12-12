@@ -1,25 +1,19 @@
 #include <sys/ioctl.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "fonctionsCommunes.c"
 #include "lanceur.c"
-#include "loadImg.c"
-#include "afficherImg.c"
-#include "getSizeTerm.c"
-#include "getScale.c"
-#include "scaling.c"
-#include "getKeyboardInput.c"
-#include "dynamique.c"
+#include "statique.c"
 #include "heure.c"
 #include "avion.c"
 
 
-int main (void)
-{
-    struct winsize w;
-    printf("test");
-    ioctl(0, TIOCGWINSZ, &w);
+int main(){
 
-    printf ("lines %d\n", w.ws_row);
-    printf ("columns %d\n", w.ws_col);
+    printf("%d \n",genRandom());
+    //vider();
+   int direction = GetKeyboardInput(0);
+    printf("%d",direction);
+  //  GetKeyboardInput(1);
     return 0;
 }
