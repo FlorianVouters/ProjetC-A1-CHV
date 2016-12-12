@@ -3,11 +3,17 @@
 #include <string.h>
 #include <stdio.h>
 
-void afficherImg(int **tableau, int posX, int posY, int nbLignes);
-//void vider(); /*fonction simpliste vidant la console mais qu'on va réutiliser*/
-//int genRandom();/*Génère un random dont on utilisera le modulo pour faire des randoms sur des intervales*/
-int ** loadImg(char* path);
 
+typedef struct image image;
+struct image    {
 
+    int **tableau;
+    int largeur;
+    int hauteur;
+};
+
+image loadImg(int path);
+void afficher (image myImage, int posX, int posY, int nbLignes);
+void mallocTableau(image *myImage);
 
 #endif // FONCTIONSCOMMUNES_H_INCLUDED
