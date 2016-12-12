@@ -1,6 +1,3 @@
-#include <sys/ioctl.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include "fonctionsCommunes.c"
 #include "lanceur.c"
 #include "statique.c"

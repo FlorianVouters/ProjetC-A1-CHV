@@ -2,6 +2,8 @@
 
 void heure (int n)
 {
+    winsize tailleEcran;
+    getSize(&tailleEcran);
     afficher(fusionHeure(getTime()), 2,2,10);
 }
 

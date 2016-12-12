@@ -62,9 +62,6 @@ int GetKeyboardInput(int TypeTerm){
                     return 6;
 
                 }
-
-
-
     }
 
 /*TypeTerm est 1 si le programme lancé est la statique*/
@@ -72,9 +69,8 @@ int GetKeyboardInput(int TypeTerm){
 
         char c;
 
-        while(c == NULL){
-        c= getchar();
-        }
+        while(c == NULL)
+            c = getchar();
         return 12;
 
     }
@@ -83,6 +79,10 @@ return 13;
 
 }
 
+void getSize (winsize *tailleEcran)
+{
+    ioctl(0, TIOCGWINSZ, &tailleEcran);
+}
 
 //exit (-1) = erreur ouverture fichier
 //exit (-2) = erreur allocation tableau
