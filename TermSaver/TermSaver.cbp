@@ -31,50 +31,15 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="afficherImg.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="afficherImg.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
 		<Unit filename="avion.c">
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="avion.h" />
-		<Unit filename="dynamique.c">
+		<Unit filename="fonctionsCommunes.c">
 			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="dynamique.h" />
-		<Unit filename="genRandom.c">
-			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="genRandom.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="getKeyboardInput.c">
-			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="getKeybordInput.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="getScale.c">
-			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="getScale.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="getSizeTerm.c">
-			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="getSizeTerm.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="fonctionsCommunes.h" />
 		<Unit filename="heure.c">
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
@@ -87,23 +52,13 @@
 		<Unit filename="lanceur.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="loadImg.c">
-			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="loadImg.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="scaling.c">
+		<Unit filename="statique.c">
 			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="scaling.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="statique.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
