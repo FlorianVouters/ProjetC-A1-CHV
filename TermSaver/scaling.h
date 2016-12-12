@@ -1,6 +1,0 @@
-#ifndef SCALING_H_INCLUDED
-#define SCALING_H_INCLUDED
-
-
-
-#endif // SCALING_H_INCLUDED

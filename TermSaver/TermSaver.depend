@@ -3,3 +3,71 @@
 	<sys/ioctl.h>
 	<stdio.h>
 
+1481294522 source:/home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/afficherImg.c
+	"afficherImg.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/afficherImg.h
+
+1481294522 source:/home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/main.c
+	<sys/ioctl.h>
+	<stdio.h>
+	<stdlib.h>
+	"lanceur.c"
+	"loadImg.c"
+	"afficherImg.c"
+	"getSizeTerm.c"
+	"getScale.c"
+	"scaling.c"
+	"getKeyboardInput.c"
+	"dynamique.c"
+	"heure.c"
+	"avion.c"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/lanceur.c
+	"lanceur.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/lanceur.h
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/loadImg.c
+	"loadImg.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/loadImg.h
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/afficherImg.c
+	"afficherImg.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getSizeTerm.c
+	"getSizeTerm.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getSizeTerm.h
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getScale.c
+	"getScale.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getScale.h
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/scaling.c
+	"scaling.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/scaling.h
+
+1481294714 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getKeyboardInput.c
+	"getKeybordInput.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getKeybordInput.h
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/dynamique.c
+	"dynamique.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/dynamique.h
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/heure.c
+	"heure.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/heure.h
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/avion.c
+	"avion.h"
+
+1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/avion.h
+
