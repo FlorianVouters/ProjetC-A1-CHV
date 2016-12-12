@@ -47,6 +47,13 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="dynamique.h" />
+		<Unit filename="genRandom.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="genRandom.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="getKeyboardInput.c">
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
