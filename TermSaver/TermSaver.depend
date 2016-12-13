@@ -1,157 +1,40 @@
 # depslib dependency file v1.0
-1481547871 source:/home/vm/Documents/TermSaver/main.c
-	<sys/ioctl.h>
-	<stdio.h>
-	<stdlib.h>
-	"fonctionsCommunes.c"
-	"lanceur.c"
-	"statique.c"
-	"heure.c"
-	"avion.c"
+1481621512 source:/home/TermSaver/avion.c
 
-1481294522 source:/home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/afficherImg.c
-	"afficherImg.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/afficherImg.h
-
-1481294522 source:/home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/main.c
-	<sys/ioctl.h>
-	<stdio.h>
-	<stdlib.h>
-	"lanceur.c"
-	"loadImg.c"
-	"afficherImg.c"
-	"getSizeTerm.c"
-	"getScale.c"
-	"scaling.c"
-	"getKeyboardInput.c"
-	"dynamique.c"
-	"heure.c"
-	"avion.c"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/lanceur.c
-	"lanceur.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/lanceur.h
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/loadImg.c
-	"loadImg.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/loadImg.h
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/afficherImg.c
-	"afficherImg.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getSizeTerm.c
-	"getSizeTerm.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getSizeTerm.h
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getScale.c
-	"getScale.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getScale.h
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/scaling.c
-	"scaling.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/scaling.h
-
-1481294714 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getKeyboardInput.c
-	"getKeybordInput.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/getKeybordInput.h
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/dynamique.c
-	"dynamique.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/dynamique.h
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/heure.c
-	"heure.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/heure.h
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/avion.c
-	"avion.h"
-
-1481294522 /home/florian/Documents/GitHub/ProjetC-A1-CHV/TermSaver/TermSaver/avion.h
-
-1481293891 /home/vm/Documents/TermSaver/lanceur.c
-	"lanceur.h"
-
-1481292284 /home/vm/Documents/TermSaver/lanceur.h
-
-1481293891 /home/vm/Documents/TermSaver/heure.c
-	"heure.h"
-
-1481291741 /home/vm/Documents/TermSaver/heure.h
-
-1481298182 /home/vm/Documents/TermSaver/avion.c
-	"avion.h"
-
-1481548662 /home/vm/Documents/TermSaver/avion.h
-
-1481549002 source:/home/vm/Documents/TermSaver/fonctionsCommunes.c
+1481621796 source:/home/TermSaver/fonctionsCommunes.c
 	"fonctionsCommunes.h"
 
-1481548802 /home/vm/Documents/TermSaver/fonctionsCommunes.h
-	<string.h>
-	<stdio.h>
-
-1481549002 /home/vm/Documents/TermSaver/fonctionsCommunes.c
-	"fonctionsCommunes.h"
-
-1481547682 /home/vm/Documents/TermSaver/statique.c
-	"statique.h"
-
-1481548181 /home/vm/Documents/TermSaver/statique.h
-
-1481547682 source:/home/vm/Documents/TermSaver/statique.c
-	"statique.h"
-
-1481573523 source:/home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/main.c
-	"fonctionsCommunes.c"
-	"lanceur.c"
-	"statique.c"
-	"heure.c"
-	"avion.c"
-
-1481573596 /home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/fonctionsCommunes.c
-	"fonctionsCommunes.h"
-
-1481573523 /home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/fonctionsCommunes.h
+1481621780 /home/TermSaver/fonctionsCommunes.h
 	<string.h>
 	<stdlib.h>
 	<stdio.h>
 	<time.h>
 	<sys/ioctl.h>
 
-1481557960 /home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/lanceur.c
-	"lanceur.h"
-
-1481557960 /home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/lanceur.h
-
-1481557960 /home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/statique.c
-	"statique.h"
-
-1481557960 /home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/statique.h
-
-1481573737 /home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/heure.c
+1481621844 source:/home/TermSaver/heure.c
 	"heure.h"
 
-1481558688 /home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/heure.h
+1481622099 /home/TermSaver/heure.h
 	<time.h>
 	<math.h>
+	"fonctionsCommunes.h"
 
-1481557960 /home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/avion.c
+1481621594 source:/home/TermSaver/lanceur.c
+
+1481622016 source:/home/TermSaver/main.c
+	<stdio.h>
+	<stdlib.h>
+	"fonctionsCommunes.h"
+	"lanceur.h"
+	"statique.h"
+	"heure.h"
 	"avion.h"
 
-1481557960 /home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/avion.h
+1481621624 /home/TermSaver/lanceur.h
 
-1481557960 source:/home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/statique.c
-	"statique.h"
+1481621900 /home/TermSaver/statique.h
 
-1481573596 source:/home/maxime/Bureau/ProjetC-A1-CHV/TermSaver/fonctionsCommunes.c
-	"fonctionsCommunes.h"
+1481621900 /home/TermSaver/avion.h
+
+1481621045 source:/home/TermSaver/statique.c
 

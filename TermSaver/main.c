@@ -1,8 +1,10 @@
-#include "fonctionsCommunes.c"
-#include "lanceur.c"
-#include "statique.c"
-#include "heure.c"
-#include "avion.c"
+#include <stdio.h>
+#include <stdlib.h>
+#include "fonctionsCommunes.h"
+#include "lanceur.h"
+#include "statique.h"
+#include "heure.h"
+#include "avion.h"
 
 
 int main(){

@@ -3,6 +3,7 @@
 
 #include <time.h>
 #include <math.h>
+#include "fonctionsCommunes.h"
 
 typedef struct tm tm;
 

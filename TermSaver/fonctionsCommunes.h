@@ -20,4 +20,5 @@ image loadImg(int path);
 void afficher (image myImage, int posX, int posY, int nbLignes);
 void mallocTableau(image *myImage);
 
+
 #endif // FONCTIONSCOMMUNES_H_INCLUDED
