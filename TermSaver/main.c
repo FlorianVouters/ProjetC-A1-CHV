@@ -10,9 +10,11 @@
 int main(){
 
     printf("%d \n",genRandom());
-    //vider();
-   int direction = GetKeyboardInput(0);
-    printf("%d",direction);
+    vider();
+    int saverAlancer[1];
+lanceur(saverAlancer[0]);
+   // statique(0,1);
+    //heure(2);
   //  GetKeyboardInput(1);
     return 0;
 }
