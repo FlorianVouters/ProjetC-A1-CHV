@@ -1,52 +1,270 @@
 #include "lanceur.h"
 
-void lanceur(int saverAlancer[]){
+void lanceur(int laDeche, int saverAexe){
 
 
 pid_t f;
 f= fork();
 char *valeurVarEnvironement;
 
+int saverAlancer= saverAexe;
 
 
-printf("le fork est :%d\n",f);
+
+//printf("le fork est :%d\n",f);
+
+
+
 switch (f){
 
 //fils
     default:
         //exec
-        switch(saverAlancer[0]){  //le segsig est ici !!!!!!!!!!
+        if(laDeche ==1){
+        printf("truc a lancer %d\n", saverAlancer);
+
+
+
+        switch(saverAlancer){
 
             case 1:
 
             printf("le fils lance statique");
-            //execlp("/home/TermSaver","statique",NULL);
 
-            break;
+
+            /*j'ai essayer de lancer l'image de façon propore de la manière suivante mais il semble que
+        execlp() n'aime pas qu'on lui passe des Strings
+
+
+        char ImageAlancer[50];
+        int i=genRandom()%16+1;
+        printf("%d",i);
+        sprintf(ImageAlancer,"",i);
+        printf(" c est facile %s\n",ImageAlancer);
+
+
+        execlp("/home/TermSaver/statique","statique", ImageAlancer,NULL);
+
+
+
+        du coupj'ai honte mais je n'ai pas plus de temps a y perdre donc en attendant: hard coding*/
+
+
+           // execlp("/home/TermSaver","statique",NULL);
+           int imageAcharger= genRandom()%16+1;
+
+
+
+           switch(imageAcharger){
+
+
+           case 1:
+           execlp("/home/TermSaver/statique","statique", "1",NULL);
+           wait(1);
+           break;
+
+           case 2:
+           execlp("/home/TermSaver/statique","statique", "2",NULL);
+           wait(1);
+           break;
+
+           case 3:
+           execlp("/home/TermSaver/statique","statique", "3",NULL);
+           wait(1);
+           break;
+
+           case 4:
+           execlp("/home/TermSaver/statique","statique", "4",NULL);
+           wait(1);
+           break;
+
+           case 5:
+           execlp("/home/TermSaver/statique","statique", "5",NULL);
+           wait(1);
+           break;
+
+           case 6:
+           execlp("/home/TermSaver/statique","statique", "6",NULL);
+           wait(1);
+           break;
+
+           case 7:
+           execlp("/home/TermSaver/statique","statique", "7",NULL);
+           wait(1);
+           break;
+
+           case 8:
+           execlp("/home/TermSaver/statique","statique", "8",NULL);
+           wait(1);
+           break;
+
+           case 9:
+           execlp("/home/TermSaver/statique","statique", "9",NULL);
+           wait(1);
+           break;
+
+           case 10:
+           execlp("/home/TermSaver/statique","statique", "10",NULL);
+           wait(1);
+           break;
+
+           case 11:
+           execlp("/home/TermSaver/statique","statique", "11",NULL);
+           wait(1);
+           break;
+
+           case 12:
+           execlp("/home/TermSaver/statique","statique", "12",NULL);
+           wait(1);
+           break;
+
+           case 13:
+           execlp("/home/TermSaver/statique","statique", "13",NULL);
+           wait(1);
+           break;
+
+           case 14:
+           execlp("/home/TermSaver/statique","statique", "14",NULL);
+           wait(1);
+           break;
+
+           case 15:
+           execlp("/home/TermSaver/statique","statique", "15",NULL);
+           wait(1);
+           break;
+
+           case 16:
+           execlp("/home/TermSaver/statique","statique", "16",NULL);
+           wait(1);
+           break;
+
+
+           default:
+           break;
+
+
+           }
+
+
+
+
+           execlp("/home/TermSaver/statique","statique 15",NULL);
+
+            break; //break lancement statique
 
             case 2:
             printf("le fils lance heure");
-            //execlp("/home/TermSaver","statique",NULL);
+            //execlp("/home/TermSaver/hello","hello",NULL);
 
-            break;
+
+            /*meme disclamer que pour le statiue si j avais la fonctions qui ajoute la String au exec ce serait beau et propre mais en attendant....*/
+
+            switch(imageAcharger){
+
+
+           case 1:
+           execlp("/home/TermSaver/heure","heure", "1",NULL);
+           wait(1);
+           break;
+
+           case 2:
+           execlp("/home/TermSaver/heure","heure", "2",NULL);
+           wait(1);
+           break;
+
+           case 3:
+           execlp("/home/TermSaver/heure","heure", "3",NULL);
+           wait(1);
+           break;
+
+           case 4:
+           execlp("/home/TermSaver/heure","heure", "4",NULL);
+           wait(1);
+           break;
+
+           case 5:
+           execlp("/home/TermSaver/heure","heure", "5",NULL);
+           wait(1);
+           break;
+
+           case 6:
+           execlp("/home/TermSaver/heure","heure", "6",NULL);
+           wait(1);
+           break;
+
+           case 7:
+           execlp("/home/TermSaver/heure","heure", "7",NULL);
+           wait(1);
+           break;
+
+           case 8:
+           execlp("/home/TermSaver/heure","heure", "8",NULL);
+           wait(1);
+           break;
+
+           case 9:
+           execlp("/home/TermSaver/heure","heure", "9",NULL);
+           wait(1);
+           break;
+
+           case 10:
+           execlp("/home/TermSaver/heure","heure", "10",NULL);
+           wait(1);
+           break;
+
+           case 11:
+           execlp("/home/TermSaver/heure","heure", "11",NULL);
+           wait(1);
+           break;
+
+           case 12:
+           execlp("/home/TermSaver/heure","heure", "12",NULL);
+           wait(1);
+           break;
+
+           case 13:
+           execlp("/home/TermSaver/heure","heure", "13",NULL);
+           wait(1);
+           break;
+
+           case 14:
+           execlp("/home/TermSaver/heure","heure", "14",NULL);
+           wait(1);
+           break;
+
+           case 15:
+           execlp("/home/TermSaver/heure","heure", "15",NULL);
+           wait(1);
+           break;
+
+           default:
+           execlp("/home/TermSaver/heure","heure", "1",NULL);
+           break;
+}
+            //heure(2);
+          //  execlp("/home/TermSaver","statique",NULL);
+
+            break;//break lancement heure
 
             case 3:
             printf("le fils lance avion");
-           // execlp("/home/TermSaver","statique",NULL);
+            execlp("/home/TermSaver/hello","hello",NULL);
+          // execlp("/home/TermSaver","statique",NULL);
 
-            break;
+            break;//break lancement avion
 
             default:
             break;
+            }
         }
-    break;
+    break;  //break du default
 
 
 
 //père
     case 0:
-
-    vider(); //on vide la console
+  if(laDeche ==0){
+    //vider(); //on vide la console
 
     int iRand=genRandom(); //on génère un nombre aléatoire qui servira pour tous les choix aléatoires qu'n devra faire
 
@@ -67,7 +285,7 @@ switch (f){
        // sprintf(pathComplet, ".profile/%s", "EXIASAVER_PBM");
        // fichier = fopen(pathComplet, "r");
         printf("statique");
-        *saverAlancer=1;
+
         iRand=iRand%6;
         switch(/*iRand*/0){
 
@@ -107,24 +325,27 @@ switch (f){
             break;
         }
 
+        lanceur(1,1);
+
         break; //break du case de lancement du statique
 
     case 2:
 
-
+lanceur(1,2);
 
     //lire EXIASAVER2_PMB pour savoir le répertoire où sont les images de l'heure
     //lire EXIASAVER2_TAILLE pour savoir le répertoire où sont les images de l'heure
     //lire EXIASAVER2_SLEEP pour savoir le temps de refresh de l'horologe
-   valeurVarEnvironement = getenv("EXIASAVER2_PMB");
-saverAlancer[0]=2;
-
+    //MEMO: comparer les strings obtenues avec celle de loadImg ,si elle sot diférentes crier sur Max pour qu'il addapte sa fonction
+   //valeurVarEnvironement = getenv("EXIASAVER2_PMB");
 
 
     break;
 
+
+
     case 3:
-saverAlancer[0]=3;
+lanceur(1,3);
     //lire EXIASAVER3_PBM pour savoir le répertoire où sont les images de l'avion
 
     break;
@@ -136,11 +357,14 @@ saverAlancer[0]=3;
 
     }
     wait(1); //c'est un test, je ne sais pas si ça sert ou si ça va foutre la merde
+    } //fin du if de la dèche
+    break; //break du père
 
-break;
 
 
 }
-printf("saverAlancer = %d\n", saverAlancer[0]);
+
+
+//printf("saverAlancer = %d\n", saverAlancer);
 sleep(1);
 }

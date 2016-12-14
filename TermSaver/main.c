@@ -11,10 +11,13 @@ int main(){
 
     printf("%d \n",genRandom());
     vider();
-    int saverAlancer[1];
-lanceur(saverAlancer[0]);
-   // statique(0,1);
+    int saverAexe=0;
+    int laDeche=0;
+lanceur(laDeche, saverAexe);
+
+
+    //statique(0,15);
     //heure(2);
-  //  GetKeyboardInput(1);
+    //GetKeyboardInput(1);
     return 0;
 }

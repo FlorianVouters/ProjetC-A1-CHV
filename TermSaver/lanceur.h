@@ -3,6 +3,14 @@
 #include <sys/types.h>
 #include "fonctionsCommunes.h"
 
+
+
+//la merde pour la compil
+
+
+
+
+//le vrai .h
 typedef struct historique{
 
 int time;
