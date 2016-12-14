@@ -69,7 +69,7 @@ int GetKeyboardInput(int TypeTerm){
 
         char c;
 
-        while(c == NULL)
+        while(c != '\n' && c!= EOF)
             c = getchar();
         return 12;
 
@@ -89,6 +89,10 @@ void getSize (winsize *tailleEcran)
 //path = nom du fichier sans l'extension
 image loadImg (int path)
 {
+    pid_t ID;
+    ID = fork();
+    if (ID == 0)
+    {
     //formatage du chemin d'accès au fichier
     char fullPath[50];
     sprintf(fullPath, "data/%d.pbm", path);
@@ -151,6 +155,9 @@ image loadImg (int path)
     }
     //renvoi de la structure
     return myImage;
+    }
+    else
+        wait(1);
 }
 
 void afficher (image myImage, int posX, int posY, int nbLignes)

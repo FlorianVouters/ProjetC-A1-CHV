@@ -54,7 +54,6 @@ switch (f){
            int imageAcharger= genRandom()%16+1;
 
 
-
            switch(imageAcharger){
 
 

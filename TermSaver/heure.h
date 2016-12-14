@@ -7,9 +7,10 @@
 
 typedef struct tm tm;
 
-void heure (int n);
 tm *getTime ();
+void heure (int n);
 void copyTableau (image *myImage, image imageCopie, int posX);
+image scale (image image1, int n);
 image fusionImage (image image1, image image2);
 image fusionHeure ();
 

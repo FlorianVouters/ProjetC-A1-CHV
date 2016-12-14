@@ -47,28 +47,29 @@
 1481719898 source:/home/TermSaver/statique.c
 	"statique.h"
 
-1481714275 source:/home/ProjetC-A1-CHV/TermSaver/fonctionsCommunes.c
+1481750011 source:/home/ProjetC-A1-CHV/TermSaver/fonctionsCommunes.c
 	"fonctionsCommunes.h"
 
-1481714275 /home/ProjetC-A1-CHV/TermSaver/fonctionsCommunes.h
+1481750011 /home/ProjetC-A1-CHV/TermSaver/fonctionsCommunes.h
 	<string.h>
 	<stdlib.h>
 	<stdio.h>
 	<time.h>
 	<sys/ioctl.h>
+	<unistd.h>
 
-1481623407 source:/home/ProjetC-A1-CHV/TermSaver/heure.c
+1481749731 source:/home/ProjetC-A1-CHV/TermSaver/heure.c
 	"heure.h"
 
-1481623407 /home/ProjetC-A1-CHV/TermSaver/heure.h
+1481749393 /home/ProjetC-A1-CHV/TermSaver/heure.h
 	<time.h>
 	<math.h>
 	"fonctionsCommunes.h"
 
-1481737991 source:/home/ProjetC-A1-CHV/TermSaver/lanceur.c
+1481748926 source:/home/ProjetC-A1-CHV/TermSaver/lanceur.c
 	"lanceur.h"
 
-1481741572 source:/home/ProjetC-A1-CHV/TermSaver/main.c
+1481748926 source:/home/ProjetC-A1-CHV/TermSaver/main.c
 	<stdio.h>
 	<stdlib.h>
 	"fonctionsCommunes.h"
@@ -77,22 +78,22 @@
 	"heure.h"
 	"avion.h"
 
-1481737991 /home/ProjetC-A1-CHV/TermSaver/lanceur.h
+1481748926 /home/ProjetC-A1-CHV/TermSaver/lanceur.h
 	<sys/types.h>
 	"fonctionsCommunes.h"
 
-1481737991 /home/ProjetC-A1-CHV/TermSaver/statique.h
+1481748926 /home/ProjetC-A1-CHV/TermSaver/statique.h
 	"fonctionsCommunes.h"
 
-1481730466 /home/ProjetC-A1-CHV/TermSaver/avion.h
+1481748926 /home/ProjetC-A1-CHV/TermSaver/avion.h
 	"fonctionsCommunes.h"
 	<stdio.h>
 	<stdlib.h>
 
-1481737991 source:/home/ProjetC-A1-CHV/TermSaver/statique.c
+1481748926 source:/home/ProjetC-A1-CHV/TermSaver/statique.c
 	"statique.h"
 
-1481744893 source:/home/ProjetC-A1-CHV/TermSaver/avion.c
+1481748926 source:/home/ProjetC-A1-CHV/TermSaver/avion.c
 	"avion.h"
 	"fonctionsCommunes.h"
 	<stdio.h>
