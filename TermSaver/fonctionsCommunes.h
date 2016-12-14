@@ -19,6 +19,10 @@ void getSize(winsize *tailleEcran);
 image loadImg(int path);
 void afficher (image myImage, int posX, int posY, int nbLignes);
 void mallocTableau(image *myImage);
+int genRandom();
+void vider();
+int GetKeyboardInput(int TypePerm);
+void viderBuffer ();
 
 
 #endif // FONCTIONSCOMMUNES_H_INCLUDED

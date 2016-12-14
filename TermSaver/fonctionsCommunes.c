@@ -48,11 +48,11 @@ int GetKeyboardInput(int TypeTerm){
                     break;
                 case 'q':
                    // printf("ouest\n");
-                    return 2;
+                    return 4;
                     break;
                 case 'd':
                   //  printf("est\n");
-                    return 4;
+                    return 2;
                     break;
                 case 'x':
                  //   printf("exit");
@@ -81,7 +81,7 @@ return 13;
 
 void getSize (winsize *tailleEcran)
 {
-    ioctl(0, TIOCGWINSZ, &tailleEcran);
+    ioctl(0, TIOCGWINSZ, tailleEcran);
 }
 
 //exit (-1) = erreur ouverture fichier
@@ -209,4 +209,14 @@ void mallocTableau (image *myImage)
         if (myImage->tableau[i] == NULL)
             exit(-2);
     }
+}
+
+void viderBuffer () {
+
+    char c;
+    while (c != '\n')
+    {
+        c = getchar();
+    }
+
 }
