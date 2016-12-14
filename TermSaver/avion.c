@@ -117,8 +117,8 @@ do//x sera l'entier choisit pour détecter la touche entrée, on regarde si l'ut
                         exit(EXIT_FAILURE);
                         break;
     }
-    }   printf("Taille max : %d", iSizeTermMax);
-    poserTableauComplet(imTableau, myImage, x, y, iSizeTermy);
+    }
+
         if (x < 0 || x > iSizeTermx - 6)
         {
             tourDuMonde(iDirectionAvion, iSizeTermx, iSizeTermy, iSizeTermMax, myImage.tableau, imTableau);
@@ -127,6 +127,7 @@ do//x sera l'entier choisit pour détecter la touche entrée, on regarde si l'ut
             tourDuMonde(iDirectionAvion, iSizeTermx, iSizeTermy, iSizeTermMax, myImage.tableau, imTableau);
         }else{
         //printf("%d,%d,%d et Orientation : %d", x,y,iSizeTermy, iDirectionAvion);
+        poserTableauComplet(imTableau, myImage, x, y, iSizeTermy);
         afficher(myImage,x,y,iSizeTermy);
         //sleep(2);
     }
@@ -140,10 +141,8 @@ void tourDuMonde(int iDirection, int iLongueur, int iLargeur, int iSizeMax, int*
 {
     int iBuffer[iSizeMax];
 
-    printf("Je rentre dans le tour du monde.\n");
-
     int i=0; int j=0;
-    printf("Bonjour\n");
+
 
     switch (iDirection)
     {
@@ -154,7 +153,7 @@ void tourDuMonde(int iDirection, int iLongueur, int iLargeur, int iSizeMax, int*
             //printf("Je met la première ligne dans le buffer, j'en suis à la %d case\n", i);
         }
         i = 0;
-        for(;j<iLargeur-1;j++)
+        for(;j<iLargeur;j++)
         {
             for (;i<iLongueur;i++)
             {
@@ -165,7 +164,7 @@ void tourDuMonde(int iDirection, int iLongueur, int iLargeur, int iSizeMax, int*
             //printf("Je change de colonne, je fais la %d colonne\n", j);
         }
         i = 0; j = 0;
-        for (;i<iLongueur-1; i++)
+        for (;i<iLongueur; i++)
         {
             imTableau.tableau[iLargeur-1][i] = iBuffer[i];
             //printf("Je remet le buffer dans le tableau, j'en suis à la %d case\n", i);
@@ -173,69 +172,69 @@ void tourDuMonde(int iDirection, int iLongueur, int iLargeur, int iSizeMax, int*
         afficher(imTableau, 0, 0, iLargeur-1);
         break;
 
-    /*case 2 :
-        for (;j<iLargeur;j++)
+    case 2 :
+        for (;j<iLargeur-1;j++)
         {
-            iBuffer[j] = imTableau.tableau[j][iLongueur];
+            iBuffer[j] = imTableau.tableau[j][iLongueur-1];
         }
-        j=0;i=iLongueur;
+        j=0;i=iLongueur-1;
         for (;i>0;i--)
         {
             for(;j<iLargeur;j++)
             {
-                imTableau.tableau[i][j] = imTableau.tableau[i-1][j];
+                imTableau.tableau[j][i] = imTableau.tableau[j][i-1];
             }
             j = 0;
         }j=0;
-        for (;j<iLargeur;i++)
+        for (;j<iLargeur-1;j++)
         {
-            imTableau.tableau[0][j] = iBuffer[j];
+            imTableau.tableau[j][0] = iBuffer[j];
         }
         afficher(imTableau, 0, 0, iLargeur);
         break;
 
     case 3 :
-        for (; i<iLongueur; i++)
+        for (; i<iLongueur-1; i++)
         {
-            iBuffer[i] = imTableau.tableau[i][iLargeur];
+            iBuffer[i] = imTableau.tableau[iLargeur-1][i];
         }
-        i = 0;j=iLargeur;
+        i = 0;j=iLargeur-1;
         for(;j<0;j--)
         {
-            for (;i<iLongueur;i++)
+            for (;i<iLongueur-1;i++)
             {
-                imTableau.tableau[i][j] = imTableau.tableau[i][j-1];
+                imTableau.tableau[j][i] = imTableau.tableau[j-1][i];
             }
             i=0;
         }
         i = 0; j = 0;
-        for (;i<iLongueur; i++)
+        for (;i<iLongueur-1; i++)
         {
-            imTableau.tableau[i][0] = iBuffer[i];
+            imTableau.tableau[0][i] = iBuffer[i];
         }
         afficher(imTableau, 0, 0, iLargeur);
         break;
 
     case 4 :
-        for (;j<iLargeur;j++)
+        for (;j<iLargeur-1;j++)
         {
-            iBuffer[j] = imTableau.tableau[0][j];
+            iBuffer[j] = imTableau.tableau[j][0];
         }
         j=0;i=0;
         for (;i<iLongueur-1;i++)
         {
-            for(;j<iLargeur;j++)
+            for(;j<iLargeur-1;j++)
             {
-                imTableau.tableau[i][j] = imTableau.tableau[i+1][j];
+                imTableau.tableau[j][i] = imTableau.tableau[j][i+1];
             }
             j = 0;
         }j=0;
-        for (;j>0;i++)
+        for (;j<iLargeur-1;j++)
         {
-            imTableau.tableau[iLongueur][j] = iBuffer[j];
+            imTableau.tableau[j][iLongueur] = iBuffer[j];
         }
         afficher(imTableau, 0, 0, iLargeur);
-        break;*/
+        break;
 
     default :
                 printf("Erreur de gestion de mouvement de l'avion.\n");
@@ -248,14 +247,16 @@ void tourDuMonde(int iDirection, int iLongueur, int iLargeur, int iSizeMax, int*
 void poserTableauComplet(image imTableau, image myImage, int x, int y, int iSizeTermy)
 {
 
-int k = 0; int m =0; int i= x; int j = y;
-        for (;j<x+6;j++)
+int k = 0; int m =0; int i= x; int j = y; int x2 = x;
+x = x+6; y = y+6;
+        for (;j<y;j++)
         {
-            for(;i<y+6;i++)
+            for(;i<x;i++)
             {
-                imTableau.tableau[i][j] = myImage.tableau[k][m];
+
+                imTableau.tableau[j][i] = myImage.tableau[k][m];
                 k++;
-            } m++; k=0;
+            } m++; k=0; i = x2;
         }m = 0;
 
         //afficher(imTableau,0,0,iSizeTermy);
