@@ -11,17 +11,27 @@
 
 
 //le vrai .h
-typedef struct historique{
+typedef struct historique historique;
+typedef struct pos pos;
+typedef struct tm tm;
 
-int time;
-int SaverLance;
-int ImageLance;
-int TailleTerm[2];
-int coordAvion[2];
-int affichageHistorique;
+struct pos{
 
-
+    int x;
+    int y;
 };
+
+struct historique{
+
+    tm heure;
+    int typeEcran;
+    int fichier;
+    int tailleHeure;
+    pos posAvion;
+    historique *next;
+};
+
+void addStruct (historique historique);
 
 
 #endif // LANCEUR_H_INCLUDED
