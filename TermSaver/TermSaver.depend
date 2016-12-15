@@ -58,27 +58,28 @@
 	<sys/ioctl.h>
 	<unistd.h>
 
-1481749731 source:/home/ProjetC-A1-CHV/TermSaver/heure.c
+1481793905 source:/home/ProjetC-A1-CHV/TermSaver/heure.c
 	"heure.h"
 
-1481749393 /home/ProjetC-A1-CHV/TermSaver/heure.h
+1481793910 /home/ProjetC-A1-CHV/TermSaver/heure.h
 	<time.h>
 	<math.h>
 	"fonctionsCommunes.h"
 
-1481748926 source:/home/ProjetC-A1-CHV/TermSaver/lanceur.c
+1481752186 source:/home/ProjetC-A1-CHV/TermSaver/lanceur.c
 	"lanceur.h"
 
-1481748926 source:/home/ProjetC-A1-CHV/TermSaver/main.c
+1481792723 source:/home/ProjetC-A1-CHV/TermSaver/main.c
 	<stdio.h>
 	<stdlib.h>
 	"fonctionsCommunes.h"
-	"lanceur.h"
 	"statique.h"
 	"heure.h"
 	"avion.h"
+	"lanceur.h"
+	"historique.h"
 
-1481748926 /home/ProjetC-A1-CHV/TermSaver/lanceur.h
+1481752551 /home/ProjetC-A1-CHV/TermSaver/lanceur.h
 	<sys/types.h>
 	"fonctionsCommunes.h"
 
@@ -101,4 +102,9 @@
 	<string.h>
 	<time.h>
 	<sys/ioctl.h>
+
+1481793428 /home/ProjetC-A1-CHV/TermSaver/historique.h
+	<time.h>
+	<stdlib.h>
+	<stdio.h>
 
