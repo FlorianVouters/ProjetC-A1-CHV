@@ -37,24 +37,24 @@ int GetKeyboardInput(int TypeTerm){
 
         char direction= commande[0];
             switch (direction){
-                case 'z':
+                case 'z': case '5':
                    // printf("nord\n");
                     return 1;
                     break;
 
-                case 's':
+                case 's': case '2':
                 //    printf("sud\n");
                     return 3;
                     break;
-                case 'q':
+                case 'q': case '1':
                    // printf("ouest\n");
                     return 4;
                     break;
-                case 'd':
+                case 'd': case '3':
                   //  printf("est\n");
                     return 2;
                     break;
-                case 'x':
+                case 'x'
                  //   printf("exit");
                     return 5;
                 default:
@@ -67,11 +67,18 @@ int GetKeyboardInput(int TypeTerm){
 /*TypeTerm est 1 si le programme lancé est la statique*/
     if (TypeTerm !=0){
 
+/*
         char c;
 
-        while(c != '\n' && c!= EOF)
+        while(c == NULL)
             c = getchar();
         return 12;
+*/
+
+
+    system("/bin/stty  raw");
+    getchar();
+
 
     }
 
@@ -89,10 +96,6 @@ void getSize (winsize *tailleEcran)
 //path = nom du fichier sans l'extension
 image loadImg (int path)
 {
-    pid_t ID;
-    ID = fork();
-    if (ID == 0)
-    {
     //formatage du chemin d'accès au fichier
     char fullPath[50];
     sprintf(fullPath, "data/%d.pbm", path);
@@ -155,9 +158,6 @@ image loadImg (int path)
     }
     //renvoi de la structure
     return myImage;
-    }
-    else
-        wait(1);
 }
 
 void afficher (image myImage, int posX, int posY, int nbLignes)

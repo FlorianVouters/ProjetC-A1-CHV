@@ -1,6 +1,6 @@
 #include "lanceur.h"
 
-void lanceur(int laDeche, int saverAexe){
+int lanceur(int laDeche, int saverAexe){
 
 
 pid_t f;
@@ -18,7 +18,7 @@ int saverAlancer= saverAexe;
 switch (f){
 
 //fils
-    default:
+   default:
         //exec
         if(laDeche ==1){
         printf("truc a lancer %d\n", saverAlancer);
@@ -29,7 +29,7 @@ switch (f){
 
             case 1:
 
-            printf("le fils lance statique");
+         //   printf("le fils lance statique");
 
 
             /*j'ai essayer de lancer l'image de façon propore de la manière suivante mais il semble que
@@ -139,6 +139,7 @@ switch (f){
 
 
            default:
+            execlp("/home/TermSaver/statique","statique 15",NULL);
            break;
 
 
@@ -147,12 +148,12 @@ switch (f){
 
 
 
-           execlp("/home/TermSaver/statique","statique 15",NULL);
+
 
             break; //break lancement statique
 
             case 2:
-            printf("le fils lance heure");
+            //printf("le fils lance heure");
             //execlp("/home/TermSaver/hello","hello",NULL);
 
 
@@ -246,8 +247,8 @@ switch (f){
             break;//break lancement heure
 
             case 3:
-            printf("le fils lance avion");
-            execlp("/home/TermSaver/hello","hello",NULL);
+           // printf("le fils lance avion");
+            execlp("/home/TermSaver/avion","avion","10","17",NULL);
           // execlp("/home/TermSaver","statique",NULL);
 
             break;//break lancement avion
@@ -283,7 +284,7 @@ switch (f){
 
        // sprintf(pathComplet, ".profile/%s", "EXIASAVER_PBM");
        // fichier = fopen(pathComplet, "r");
-        printf("statique");
+     //   printf("statique");
 
         iRand=iRand%6;
         switch(/*iRand*/0){
@@ -355,7 +356,7 @@ lanceur(1,3);
 
 
     }
-    wait(1); //c'est un test, je ne sais pas si ça sert ou si ça va foutre la merde
+    wait(10); //c'est un test, je ne sais pas si ça sert ou si ça va foutre la merde
     } //fin du if de la dèche
     break; //break du père
 
@@ -365,5 +366,5 @@ lanceur(1,3);
 
 
 //printf("saverAlancer = %d\n", saverAlancer);
-sleep(1);
+//sleep(10);
 }

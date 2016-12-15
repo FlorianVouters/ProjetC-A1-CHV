@@ -7,17 +7,47 @@
 #include "avion.h"
 
 
-int main(){
-
-    printf("%d \n",genRandom());
-    vider();
-    int saverAexe=0;
-    int laDeche=0;
-lanceur(laDeche, saverAexe);
+int main(int argc, char *argv[])
+{
 
 
-    //statique(0,15);
-    //heure(2);
-    //GetKeyboardInput(1);
-    return 0;
+    if (argc > 1){
+
+        if (argv[1] != NULL){
+
+          if (strcmp(argv[1], "-stats") ==0){
+
+
+                printf("lancer l'historique\n");
+               }
+            else{
+            printf("eh ben non\n");}
+
+
+        }
+    }
+
+    if (argc==1){
+
+
+
+
+
+        vider();
+        lanceur(0,0);
+
 }
+
+    return 0;
+
+}
+
+/*
+void main(){
+
+
+
+lanceur(0,0);
+
+}
+*/

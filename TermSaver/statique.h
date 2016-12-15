@@ -22,6 +22,6 @@ image loadImg(int path);
  */
 
 
-void statique(int TypeTerm, int imageAlancer);
+void statique(int imageAlancer);
 
 #endif // STATIQUE_H_INCLUDED
